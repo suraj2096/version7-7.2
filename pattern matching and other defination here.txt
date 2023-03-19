@@ -1,0 +1,43 @@
+1. what is pattern matching?
+pattern Matching is a process that takes expression and testing whether it matches certain criteria such as begin a specified type
+or matching a specified constant value.
+pattern matching is a check and so can be used when branching code.
+ is ,switch statement,switch expression all support pattern matching.
+
+why pattern matching useful?
+pattern matching provide more concise way of testing expressions. 
+for checking the expression by lengthy if-else statment ,pattern matching can simplify these operations.
+
+is operator: the is operator is used to check whether an object is compatible with the specific type or not.
+
+
+what is tuple? why do we need tuple in c#?
+it is used to return more than one value from a method so we use tuple . 
+
+
+major difference beteween out and ref is that 
+
+ref is required the variable must be intialized before it send to the calling method but it is not in the case of out.
+ref is used when we want to update the value from  a method. out is used when we want to return a value from a method
+we cannot use value as input in out parameter.
+
+
+extanded expression bodied members:
+a method that includes just one statement can be written with the lambda expression.
+a property with only a get accessor can be written with the same lambda expression.
+
+expreession bodied method in c# 6 will be implemented to the method or properties
+
+expression bodied methods enhanecement come in c# 7 where constuctor cna be written in
+shorter syntax 
+
+
+Note: async method kae andar always use await if you call another async method .
+
+Note void returntype of async method then the async method cannot be awaited.
+
+
+
+
+
+

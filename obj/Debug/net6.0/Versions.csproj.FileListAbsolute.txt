@@ -1,0 +1,15 @@
+D:\officeWork Folder\Versions\bin\Debug\net6.0\Versions.exe
+D:\officeWork Folder\Versions\bin\Debug\net6.0\Versions.deps.json
+D:\officeWork Folder\Versions\bin\Debug\net6.0\Versions.runtimeconfig.json
+D:\officeWork Folder\Versions\bin\Debug\net6.0\Versions.dll
+D:\officeWork Folder\Versions\bin\Debug\net6.0\Versions.pdb
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.csproj.AssemblyReference.cache
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.GeneratedMSBuildEditorConfig.editorconfig
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.AssemblyInfoInputs.cache
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.AssemblyInfo.cs
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.csproj.CoreCompileInputs.cache
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.dll
+D:\officeWork Folder\Versions\obj\Debug\net6.0\refint\Versions.dll
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.pdb
+D:\officeWork Folder\Versions\obj\Debug\net6.0\Versions.genruntimeconfig.cache
+D:\officeWork Folder\Versions\obj\Debug\net6.0\ref\Versions.dll
