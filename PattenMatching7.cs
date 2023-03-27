@@ -13,12 +13,18 @@ namespace Versions
 
         }
         public class Square:Figure { 
-           public double length { get; set; }
+           public double Length { get; set; }
         }
         public class Rectangle : Figure
         {
             public double Length { get; set; }
             public double Breadth { get; set; }
+
+            public  void Deconstruct(out double length,out double breadth)
+            {
+                length = Length;
+                breadth = Breadth;
+            }
         }
         public class Circle:Figure
         {

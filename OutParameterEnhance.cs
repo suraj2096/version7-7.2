@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 
 namespace Versions
 {
-    internal class OutParameterEnhance
+    internal class OutParameterEnhance:IDisposable
     {
         public static void takeOutParameter(out string userName,out string password)
         {
             userName = "admin";
             password = "1344343";
         }
-       /* public static dynamic returndynamic()
+
+        public void Dispose()
         {
-            return (1, 2,3,4);
-        }*/
+            GC.SuppressFinalize(this);
+        }
+        ~OutParameterEnhance()
+        {
+            Console.WriteLine("object destroyed");
+        }
+        /* public static dynamic returndynamic()
+{
+    return (1, 2,3,4);
+}*/
     }
 }

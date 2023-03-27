@@ -3,6 +3,7 @@
 
 using System.Data;
 using System.Reflection.Metadata;
+using System.Security.Cryptography.X509Certificates;
 using Versions;
 
 class Version
@@ -489,9 +490,90 @@ public static void Main(String[] args)
           default interface method.
          */
         // example:
-      /* DefInterface classImplement = new ClassImplementInter();
-        Console.WriteLine(classImplement.call());
-        classImplement.DefaultMessage();*/
+        /* DefInterface classImplement = new ClassImplementInter();
+          Console.WriteLine(classImplement.call());
+          classImplement.DefaultMessage();*/
+
+
+        /*3. pattern matching enhancement:  */
+        /* 
+        1. property pattern:
+            * the property pattern can be used for checking and comparing values of properties. It tests 
+               whether an expression properties or fields match the values of specified properties/field.
+               Each corresponding property or field must be match & the expression must not be null.
+           example:
+        */
+        /* PattenMatching7.Circle circle1 = new PattenMatching7.Circle { Radius = 10 };
+         if(circle1 is PattenMatching7.Circle{Radius:10 } circle2) {
+             Console.WriteLine("it is circle and the radius is " + circle2.Radius);
+         }*/
+
+
+        /*
+         2. var pattern:
+           * var pattern can be used to match any expression and then assigned it to a new declared variable.
+           * The var pattern is useful if you want to store property values in a variable if other patterns are matching.
+        example:
+         */
+        /*PattenMatching7.Rectangle rectangle = new PattenMatching7.Rectangle { Length=10,Breadth=20};
+        if(rectangle is PattenMatching7.Rectangle { Length:var length })
+        {
+            Console.WriteLine("the length of a rectangle that stored in a variable length " +length);
+        }*/
+
+
+        /*
+         3. positional pattern:
+             * Positional pattern is usedful when testing a type that can be deconstructed.
+             * The positional pattern can deconstruct an input expression and then test if the resulting variables 
+               match against a pattern specified in parentheses.
+        example:
+         */
+        /*PattenMatching7.Rectangle rec= new PattenMatching7.Rectangle { Length= 10,Breadth=20 }; 
+        if(rec is (10,20) rect)
+        {
+            Console.WriteLine(rect.Length + " " + rect.Breadth);
+        }*/
+
+        // here the pattern reflect position of each variable has within the deconstruct.
+
+
+        /*
+         4. tuple pattern :
+           * tuple pattern can be used to pattern match multiple input values . 
+        example:
+         */
+        /*  string returnDescriptionofShape(string shape,int length,int height)
+       {
+           return (shape, length, height) switch
+           {
+               ("Rectangle", 2, 1) => "this is a recatangle",
+               ("square", 10, 10) => "this is a square",
+               (_, _, _) => "this is not a valid pattern"
+           };
+       }
+      ;
+       Console.WriteLine(returnDescriptionofShape("Rectangle", 2, 1));*/
+
+       
+
+
+        // 4. using declaration:
+         // using var outPattern = new OutParameterEnhance();
+
+
+        // now in the above code the outPattern will destroy when program control react end of the block of main method 
+       // which is not possible in using statement.
+
+
+
+
+        //5. 
+      
+
+
+
+
 
 
     }
